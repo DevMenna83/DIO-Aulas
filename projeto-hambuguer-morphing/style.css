@@ -5,7 +5,8 @@ body {
     padding: 0;
     color: #ffffff;
     font-family: 'Macondo', cursive;
-    background-color: darkgrey;    
+    background-color: darkgrey;
+   
 }
 
 /* HEADER */
@@ -54,7 +55,10 @@ h2 {
 
 a:hover {
     color: #2E1C2B;
-    background-color: white;
+    background-color: rgb(170, 147, 194);
+    border-radius: 10px;
+    overflow: hidden;
+    
 }
 
 .fotoperfil {
@@ -138,7 +142,7 @@ a:hover {
 }
 
 .menu-items {
-    position: fixed;
+    position: absolute;
     top: 30;
     left: 0;
     width: 95%;
@@ -148,12 +152,13 @@ a:hover {
     align-items: right;
     z-index: 1;
     opacity: 0;
-    visibility: hidden;
+    
     transition: 400ms ease-in-out 0s;
 }
 
 .menu-items ul {
     list-style-type: none;
+    overflow: hidden;
 }
 
 .menu-items ul li a{
@@ -163,6 +168,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    overflow: hidden;
 }
 
 /* ANIMAÇÃO DO MENU */
@@ -221,8 +227,8 @@ a:hover {
 }
 
 .card {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 550px;
     margin: 3rem 0 0 0;
     background-image: url('foto-card2.jpg');
     background-position: center;
@@ -259,9 +265,12 @@ a:hover {
 
 .card-text {
     width: 40%;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    color: rgb(75, 71, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    color: rgb(43, 40, 40);
+    text-align: justify;
+    
 }
 
 .card-wrapper {
@@ -349,13 +358,13 @@ a:hover {
 
     .card {
         height: 250px;
-        width: 250px;
+        width: 350px;
     }
 
     .card-text {
         width: 90%;
         margin-top: 2rem;
-        text-align: center;
+        text-align:justify;
     }
 
     .card:hover > .card-wrapper::before {
